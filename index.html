@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Secure File Portal</h1>
+
+<p><a class="btn btn-sm btn-danger" href="{{ url_for('logout') }}">Logout</a></p>
+
+<form method="post" enctype="multipart/form-data" class="mb-4">
+  <div class="mb-3">
+    <label class="form-label">Select file to upload (encrypted at rest)</label>
+    <input class="form-control" type="file" name="file" required>
+  </div>
+  <button class="btn btn-primary" type="submit">Upload</button>
+</form>
+
+<h3>Files</h3>
+<table class="table table-striped">
+  <thead><tr><th>ID</th><th>Original filename</th><th>Size</th><th>Action</th></tr></thead>
+  <tbody>
+    {% for f in files %}
+    <tr>
+      <td>{{ f.id }}</td>
+      <td>{{ f.original_filename }}</td>
+      <td>{{ f.size }}</td>
+      <td><a class="btn btn-sm btn-outline-primary" href="{{ url_for('download', file_id=f.id) }}">Download</a></td>
+    </tr>
+    {% else %}
+    <tr><td colspan="4">No files uploaded yet.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+               
