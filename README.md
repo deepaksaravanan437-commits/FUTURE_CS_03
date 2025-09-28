@@ -1,52 +1,42 @@
 🔒 Secure File Sharing System (Task 3)
-
 📌 Introduction
 
-This repository contains Task 3: Secure File Sharing System completed as part of the Future Interns Cybersecurity Program (Batch 01).
-The task involved building a secure mechanism for file sharing that ensures confidentiality, integrity, and controlled access to sensitive data.
+This repository contains Task 3: Secure File Sharing System, completed as part of the Future Interns Cybersecurity Program (Batch 01).
+The task focused on building a secure mechanism for file sharing that ensures confidentiality, integrity, and controlled access to sensitive data.
 
 🎯 Objectives
 
-Design and implement a secure file sharing system.
+✅ Design and implement a secure file sharing system.
 
-Ensure encryption of files during storage and transmission.
+✅ Ensure encryption of files during storage and transmission.
 
-Implement user authentication and access control.
+✅ Implement user authentication and access control.
 
-Protect against unauthorized file access or tampering.
+✅ Protect against unauthorized file access or tampering.
 
-Document testing and verification steps with evidence.
+✅ Document testing and verification steps with evidence.
 
 🛠️ Implementation Steps
-
-Setup Environment
+1️⃣ Setup Environment
 
 Configured a secure web server.
 
 Installed required Python/Flask packages.
 
-File Upload & Storage
+2️⃣ File Upload & Storage
 
 Implemented file upload functionality.
 
 Files are stored securely with encryption enabled.
 
-Access Control
+3️⃣ Access Control
 
-Added user authentication (login system).
+User authentication system created.
 
-Restricted file access based on user permissions.
+Restricted access based on roles/permissions.
 
-Encryption Mechanism
+4️⃣ Encryption & Security
 
 Used AES encryption for securing files.
 
-Keys are managed securely to prevent unauthorized access.
-
-Testing
-
-Verified file upload, download, and access control.
-
-Tested encryption/decryption for accuracy.
-
-Checked for unauthorized access attempts.
+Prevented unauthorized access and ensured secure key management.
